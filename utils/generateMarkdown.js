@@ -10,7 +10,6 @@ function renderLicenseLink(license) {}
 // If there is no license, return an empty string
 function renderLicenseSection(license) {}
 
-// TODO: Create a function to generate markdown for README
 const generateMarkdown = ({ title, description, installation, usage, contribution, test, license, features, git, email }) =>
   `# ${title}
 ## Description
@@ -43,7 +42,7 @@ ${contribution}
 
 ## License
 
-![alt text](https://img.shields.io/badge/${license}-blue)
+[![License: ${license}](https://img.shields.io/badge/License-${license}-yellow.svg)](https://opensource.org/licenses/${license})
 
 ## Features
 
